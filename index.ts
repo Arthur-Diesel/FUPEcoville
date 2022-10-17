@@ -22,7 +22,7 @@ cron.schedule('0 0 12 * * *', async () => {
     let todaysDate = new Date();
     let difference = dateVacations.getTime() - todaysDate.getTime()
     let differenceDays = Math.ceil(difference / (1000 * 3600 * 24))
-    await Twitter.tweet(`Faltam ${differenceDays} dias até as ferias da UP.`)
+    await Twitter.tweet(`Faltam ${differenceDays} dias até as férias da UP.`)
     log('Novo Tweet!')
 }, {
     scheduled: true,
